@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Splashscreen from './Screens/Splashscreen';
+import Orderscreen from './Screens/Orderscreen';
+import Products from './Screens/Products';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <View >
+    <Products/>
+    {/* <Orderscreen/> */}
+    {/* <Splashscreen /> */}
+        </View>
   );
 }
 
