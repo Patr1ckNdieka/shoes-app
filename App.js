@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import Splashscreen from './Screens/Splashscreen';
 import Orderscreen from './Screens/Orderscreen';
 import Products from './Screens/Products';
+import Userscreen from './Screens/Userscreen';
 
 export default function App() {
   return (
     <View >
-    <Products/>
+    <Userscreen/>
+    {/* <Products/> */}
     {/* <Orderscreen/> */}
     {/* <Splashscreen /> */}
         </View>
