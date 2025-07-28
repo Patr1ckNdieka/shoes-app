@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert, ScrollView, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
-const UserScreen = () => {
+const UserScreen = ({navigation}) => {
   const [fullName, setFullName] = useState('Jane Doe');
   const [email, setEmail] = useState('janedoe@example.com');
   const [phone, setPhone] = useState('0712345678');

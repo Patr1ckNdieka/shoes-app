@@ -9,7 +9,7 @@ import {
   ScrollView
 } from 'react-native';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({ navigation}) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');

@@ -5,12 +5,14 @@ import Orderscreen from './Screens/Orderscreen';
 import Products from './Screens/Products';
 import Userscreen from './Screens/Userscreen';
 import Loginscreen from './Screens/Loginscreen';
-import SignUpScreen from './Screens/Signupscreen';
+import SignUpScreen from './Screens/SignUpScreen';
+import AppNavigator from './navigation/Navigation';
 
 export default function App() {
   return (
     <View >
-    <SignUpScreen />
+    <AppNavigator/>
+    {/* <SignUpScreen/> */}
     {/* <Loginscreen/> */}
     {/* <Userscreen/> */}
     {/* <Products/> */}

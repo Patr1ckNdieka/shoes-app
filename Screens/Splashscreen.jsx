@@ -1,10 +1,17 @@
-import { ImageBackground, SafeAreaView, StyleSheet, Text, View,Image } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react';
+import { View, Text, StyleSheet, SafeAreaView,ImageBackground } from 'react-native';
 
-const Splashscreen = () => {
+const Splashscreen = ({ navigation }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('Login');
+    }, 2000); // 2 seconds splash screen
+  }, []);
+
+  
   return (
    <SafeAreaView>
-    <ImageBackground style={{height: '100%', width: '100%'}} 
+   <ImageBackground style={{height: '100%', width: '100%'}} 
   
     source={{
         uri: 'https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg',
@@ -17,6 +24,9 @@ const Splashscreen = () => {
   )
 }
 
-export default Splashscreen
+
+
+export default Splashscreen;
 
 const styles = StyleSheet.create({})
+  
